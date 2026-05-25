@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#0A0D14" android:fillViewport="true">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🛡 VR Shield" android:textSize="26sp" android:textStyle="bold" android:textColor="#1DCA8A"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Privacy protection scanner" android:textSize="12sp" android:textColor="#6B7280"/>
+            </LinearLayout>
+            <Button android:id="@+id/btnHistory" android:layout_width="wrap_content" android:layout_height="36dp"
+                android:text="History" android:textSize="12sp" android:textColor="#1DCA8A"
+                android:background="#1A2A24" android:paddingStart="14dp" android:paddingEnd="14dp"
+                android:layout_marginEnd="8dp"/>
+            <ImageButton android:id="@+id/btnSettings" android:layout_width="36dp" android:layout_height="36dp"
+                android:src="@android:drawable/ic_menu_preferences"
+                android:background="#1A2A24" android:tint="#1DCA8A"
+                android:contentDescription="Settings"/>
+        </LinearLayout>
+
+        <!-- Status -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="#131820" android:padding="16dp" android:gravity="center_vertical"
+            android:orientation="horizontal" android:layout_marginBottom="12dp">
+            <View android:id="@+id/viewStatusDot" android:layout_width="14dp" android:layout_height="14dp"
+                android:background="@drawable/bg_dot"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="14dp">
+                <TextView android:id="@+id/tvStatusText" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="Ready to scan"
+                    android:textSize="15sp" android:textStyle="bold" android:textColor="#E8EAF0"/>
+                <TextView android:id="@+id/tvStatusSub" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="Bluetooth enabled automatically"
+                    android:textSize="12sp" android:textColor="#6B7280"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Scan / Clear -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <Button android:id="@+id/btnScan" android:layout_width="0dp" android:layout_height="52dp"
+                android:layout_weight="1" android:text="▶  Start scan" android:textColor="#FFFFFF"
+                android:textSize="15sp" android:textStyle="bold" android:background="#1DCA8A" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btnClear" android:layout_width="wrap_content" android:layout_height="52dp"
+                android:text="Clear" android:textColor="#6B7280" android:background="#131820"
+                android:paddingStart="16dp" android:paddingEnd="16dp"/>
+        </LinearLayout>
+
+        <!-- Background -->
+        <Button android:id="@+id/btnBackground" android:layout_width="match_parent" android:layout_height="44dp"
+            android:text="Run in background" android:textColor="#1DCA8A" android:textSize="13sp"
+            android:background="#1E2538" android:layout_marginBottom="14dp"/>
+
+        <!-- Metrics -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="14dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:orientation="vertical" android:background="#131820" android:padding="10dp" android:layout_marginEnd="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="THREATS" android:textSize="8sp" android:textColor="#6B7280"/>
+                <TextView android:id="@+id/tvMetricDetected" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="0" android:textSize="28sp"
+                    android:textStyle="bold" android:textColor="#E24B4A"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:orientation="vertical" android:background="#131820" android:padding="10dp" android:layout_marginEnd="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="HIGH RISK" android:textSize="8sp" android:textColor="#6B7280"/>
+                <TextView android:id="@+id/tvMetricHigh" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="0" android:textSize="28sp"
+                    android:textStyle="bold" android:textColor="#E24B4A"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:orientation="vertical" android:background="#131820" android:padding="10dp" android:layout_marginEnd="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="CYCLES" android:textSize="8sp" android:textColor="#6B7280"/>
+                <TextView android:id="@+id/tvMetricCycles" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="0" android:textSize="28sp"
+                    android:textStyle="bold" android:textColor="#E8EAF0"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:orientation="vertical" android:background="#131820" android:padding="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="UNIQUE BT" android:textSize="8sp" android:textColor="#6B7280"/>
+                <TextView android:id="@+id/tvMetricBT" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="0" android:textSize="28sp"
+                    android:textStyle="bold" android:textColor="#1DCA8A"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- VR/Glasses list -->
+        <TextView android:id="@+id/tvVRHeader" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="SMART GLASSES &amp; VR DETECTED (0)" android:textSize="11sp" android:textStyle="bold"
+            android:textColor="#E24B4A" android:layout_marginBottom="4dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Tap device for full details including MAC address"
+            android:textSize="10sp" android:textColor="#4B5563" android:layout_marginBottom="6dp"/>
+        <ListView android:id="@+id/lvVRDevices" android:layout_width="match_parent"
+            android:layout_height="120dp" android:background="#131820"
+            android:divider="#1E2538" android:dividerHeight="1dp"
+            android:scrollbars="vertical" android:layout_marginBottom="16dp"/>
+
+        <!-- All BT list -->
+        <TextView android:id="@+id/tvAllHeader" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="ALL BLUETOOTH (0 groups)" android:textSize="11sp"
+            android:textColor="#6B7280" android:layout_marginBottom="4dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Tap to see MAC address. Named devices grouped together."
+            android:textSize="10sp" android:textColor="#4B5563" android:layout_marginBottom="6dp"/>
+        <ListView android:id="@+id/lvAllDevices" android:layout_width="match_parent"
+            android:layout_height="220dp" android:background="#131820"
+            android:divider="#1E2538" android:dividerHeight="1dp"
+            android:scrollbars="vertical" android:layout_marginBottom="16dp"/>
+
+        <!-- Log -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="ACTIVITY LOG" android:textSize="11sp" android:textColor="#6B7280" android:layout_marginBottom="6dp"/>
+        <ScrollView android:id="@+id/scrollLog" android:layout_width="match_parent"
+            android:layout_height="150dp" android:background="#131820">
+            <TextView android:id="@+id/tvLog" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:fontFamily="monospace"
+                android:textSize="10sp" android:textColor="#6B7280" android:padding="10dp" android:lineSpacingMultiplier="1.5"/>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+</ScrollView>

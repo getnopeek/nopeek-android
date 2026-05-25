@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+
+    <!-- Dark background -->
+    <path android:fillColor="#0A0D14"
+        android:pathData="M0,0 L108,0 L108,108 L0,108 Z"/>
+
+    <!-- Shield body -->
+    <path android:fillColor="#1DCA8A"
+        android:pathData="M54,14 L84,28 L84,58 C84,76 70,88 54,94 C38,88 24,76 24,58 L24,28 Z"/>
+
+    <!-- Shield inner darker fill -->
+    <path android:fillColor="#148F61"
+        android:pathData="M54,22 L78,34 L78,58 C78,72 66,82 54,87 C42,82 30,72 30,58 L30,34 Z"/>
+
+    <!-- Eye shape (VR glasses) -->
+    <path android:fillColor="#0A0D14"
+        android:pathData="M36,52 C36,48 39,45 43,45 L49,45 C51,45 52,46 54,46 C56,46 57,45 59,45 L65,45 C69,45 72,48 72,52 C72,56 69,59 65,59 L59,59 C57,59 56,58 54,58 C52,58 51,59 49,59 L43,59 C39,59 36,56 36,52 Z"/>
+
+    <!-- Left lens -->
+    <path android:fillColor="#1DCA8A"
+        android:pathData="M38,52 C38,49 40,47 43,47 L49,47 C51,47 52,49 52,52 C52,55 51,57 49,57 L43,57 C40,57 38,55 38,52 Z"/>
+
+    <!-- Right lens -->
+    <path android:fillColor="#1DCA8A"
+        android:pathData="M56,52 C56,49 57,47 59,47 L65,47 C68,47 70,49 70,52 C70,55 68,57 65,57 L59,57 C57,57 56,55 56,52 Z"/>
+
+    <!-- Bridge between lenses -->
+    <path android:fillColor="#1DCA8A"
+        android:pathData="M52,51 L56,51 L56,53 L52,53 Z"/>
+
+    <!-- Left arm -->
+    <path android:fillColor="#0A0D14"
+        android:pathData="M24,52 L37,52 L37,50 L24,50 Z"/>
+
+    <!-- Right arm -->
+    <path android:fillColor="#0A0D14"
+        android:pathData="M71,52 L84,52 L84,50 L71,50 Z"/>
+
+    <!-- Shield bottom point accent -->
+    <path android:fillColor="#1DCA8A" android:fillAlpha="0.4"
+        android:pathData="M54,87 L48,78 L60,78 Z"/>
+
+</vector>
