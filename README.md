@@ -11,7 +11,7 @@
 
 **NoPeek detects nearby smart glasses and VR headsets via Bluetooth — before they record you.**
 
-[Download APK](#) · [Report Bug](https://github.com/getnopeek/nopeek-android/issues) · [Request Feature](https://github.com/getnopeek/nopeek-android/issues)
+[Download APK](https://github.com/getnopeek/nopeek-android/releases/latest/download/app-debug.apk) · [Report Bug](https://github.com/getnopeek/nopeek-android/issues) · [Request Feature](https://github.com/getnopeek/nopeek-android/issues)
 
 </div>
 
